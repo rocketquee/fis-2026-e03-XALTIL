@@ -24,4 +24,5 @@ Equipo: Webtons
 
 
 ## Seguimiento
-— Trello: [XALTIL](https://trello.com/invite/b/6ab3e1e69ddbfdfb65d743b3/ATTI15901626cd3b02df1fcdb142d9ead4393461F259/xaltil)
+— Trello: [XALTIL](https://trello.com/invite/b/6ab3e1e69ddbfdfb65d743b3/ATTI15901626cd3b02df1fcdb142d9ead4393461F259/xaltil)  
+— Classroom: https://classroom.google.com/u/1/c/ODc1NzMxODg4OTkw?hl=es
