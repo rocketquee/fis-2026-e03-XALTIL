@@ -1,0 +1,19 @@
+Fecha: 28 de septiembre de 2026
+
+Actividad: ACT-08
+
+Actividad evaluada: U1-E02
+
+Caso: C03-Sistema de préstamos de biblioteca.
+
+Responsabilidad: Analizar el caso C03 y redactar el analisis individual.
+
+Hallazgo: La lógica de cálculo de multas y renovación de libros no está codificada ni 
+          en el sistema, no se gestiona coorectamente y cambia segun el turno.
+
+Decisión: Automatizar el proceso de respaldos diarios en un servidor/nube secundario y 
+          formalizar un protocolo de pruebas periódicas de restauración
+
+Siguiente paso: Redactar el análisis individual con las tres acciones prioritarias.
+
+Evidencia: Documento del analisis individual
