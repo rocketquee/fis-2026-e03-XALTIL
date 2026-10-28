@@ -93,9 +93,7 @@ En la situación actual, el paciente no tiene una herramienta unificada, por lo 
 
 **Descripción de la mejora:** 
 El sistema centraliza la información de los centros de salud. En lugar de que el paciente llame o se desplace a ciegas, la plataforma web muestra en tiempo real la saturación, el tiempo estimado de espera y el tiempo de traslado. El paciente decide desde su casa y solicita su turno o cita en línea.
-
-*(Aquí debes insertar tu diagrama de carriles. Recuerda que en tu imagen el carril izquierdo dice "Auxiliar administrativo", cámbialo a "Paciente" para que coincida con este texto):*
-![Diagrama TO-BE del proceso de citas](ruta_a_tu_imagen_del_diagrama.png)
+![alt text](image.png)
 
 **Requisito:** 
 El sistema debe permitir visualizar el nivel de saturación y el tiempo estimado de traslado de los centros de salud más cercanos a la ubicación ingresada por el paciente antes de solicitar un turno.
