@@ -107,11 +107,7 @@ En la situación actual, el paciente no tiene una herramienta unificada, por lo 
 **Descripción de la mejora:** 
 El sistema centraliza la información de los centros de salud. En lugar de que el paciente llame o se desplace a ciegas, la plataforma web muestra en tiempo real la saturación, el tiempo estimado de espera y el tiempo de traslado. El paciente decide desde su casa y solicita su turno o cita en línea.
 
-<p align="center">
-  <img src="![alt text](image.png)" alt="Diagrama TO-BE del proceso de citas médicas" width="80%">
-  <br>
-  <em>Figura 1: Diagrama de actividades UML del proceso TO-BE con carriles de responsabilidad (Paciente y Sistema).</em>
-</p>
+![alt text](image-1.png)
 
 **Requisito:** 
 El sistema debe permitir visualizar el nivel de saturación y el tiempo estimado de traslado de los centros de salud más cercanos a la ubicación ingresada por el paciente antes de solicitar un turno.
