@@ -1,15 +1,27 @@
 # U2-E01: Inicio del modelado del negocio - Proyecto XALTIL
 
-**Equipo:** Webtons
-**Proyecto:** XALTIL
-**Fecha:** 07/10/2026
-**Tarjeta de Trello:** [ACT-12][U2-E01] Modelar el negocio del proyecto
+**Equipo:** Webtons  
+**Proyecto:** XALTIL  
+**Fecha:** 07/10/2026  
+**Tarjeta de Trello:** `[ACT-12][U2-E01] Modelar el negocio del proyecto`
 
 **Integrantes:**
 - García Villegas Jorge Ignacio
 - Martínez Aquino Jonnatan
 - Obregon Estrada Emmanuel
 - Ortiz Saucedo Jesús Adán
+
+---
+
+## Tabla de Contenido
+1. [Delimitación del proceso](#1-delimitación-del-proceso)
+2. [Stakeholders](#2-stakeholders)
+3. [Propuesta de valor](#3-propuesta-de-valor)
+4. [Suposiciones por comprobar](#4-suposiciones-por-comprobar)
+5. [Proceso Actual (AS-IS)](#5-proceso-actual-as-is)
+6. [Mejora Propuesta (TO-BE)](#6-mejora-propuesta-to-be)
+7. [Preguntas para responder sin leer](#7-preguntas-para-responder-sin-leer)
+8. [Verificación del avance (Parte D)](#8-verificación-del-avance-parte-d)
 
 ---
 
@@ -58,7 +70,8 @@ La mejora se comprobará mediante la comparación entre el tiempo de espera que 
 
 ## 4. Suposiciones por comprobar
 
-Esto todavía no lo hemos comprobado, por eso lo registramos como suposición:
+> **Nota:** Esto todavía no lo hemos comprobado, por eso lo registramos como suposición.
+
 - Que los hospitales y clínicas estarán dispuestos a compartir sus datos de ocupación.
 - Que los datos se podrán actualizar con la frecuencia necesaria para que sean útiles.
 - Que se podrá integrar la información de centros que usan sistemas internos distintos.
@@ -71,12 +84,12 @@ Esto todavía no lo hemos comprobado, por eso lo registramos como suposición:
 En la situación actual, el paciente no tiene una herramienta unificada, por lo que el proceso suele ser el siguiente:
 
 | Paso | Responsable en el proceso actual | Actividad y documento/datos que utiliza |
-| :--- | :--- | :--- |
-| 1 | Paciente o familiar | Busca información en internet o pregunta a conocidos sobre centros de salud. |
-| 2 | Paciente o familiar | Llama por teléfono al centro de salud para preguntar disponibilidad. |
-| 3 | Paciente o familiar | Se desplaza al centro de salud sin saber si hay saturación o disponibilidad. |
-| 4 | Personal de recepción | Recibe al paciente, verifica la disponibilidad en su sistema interno y le informa. |
-| 5 | Paciente o familiar | Espera su turno en el centro de salud. |
+| :---: | :--- | :--- |
+| **1** | Paciente o familiar | Busca información en internet o pregunta a conocidos sobre centros de salud. |
+| **2** | Paciente o familiar | Llama por teléfono al centro de salud para preguntar disponibilidad. |
+| **3** | Paciente o familiar | Se desplaza al centro de salud sin saber si hay saturación o disponibilidad. |
+| **4** | Personal de recepción | Recibe al paciente, verifica la disponibilidad en su sistema interno y le informa. |
+| **5** | Paciente o familiar | Espera su turno en el centro de salud. |
 
 **Decisión y Regla del proceso actual:**
 - **Condición que se comprueba:** ¿Hay disponibilidad en el centro de salud?
@@ -93,7 +106,8 @@ En la situación actual, el paciente no tiene una herramienta unificada, por lo 
 
 **Descripción de la mejora:** 
 El sistema centraliza la información de los centros de salud. En lugar de que el paciente llame o se desplace a ciegas, la plataforma web muestra en tiempo real la saturación, el tiempo estimado de espera y el tiempo de traslado. El paciente decide desde su casa y solicita su turno o cita en línea.
-![alt text](image.png)
+
+![alt text](image-1.png)
 
 **Requisito:** 
 El sistema debe permitir visualizar el nivel de saturación y el tiempo estimado de traslado de los centros de salud más cercanos a la ubicación ingresada por el paciente antes de solicitar un turno.
@@ -121,3 +135,6 @@ Ingresar la ubicación "Centro de la ciudad" y la especialidad "Medicina General
 - **Diagramas:** Se revisó el diagrama TO-BE con el equipo, asegurando que las acciones tengan responsables claros y las decisiones tengan sus condiciones.
 - **Correcciones:** Se revisaron las dudas sobre la integración de los sistemas de los hospitales, quedando registradas como supuestos en la sección 4.
 - **Publicación:** Archivo integrado en la carpeta `U2-E01` y publicado en la rama `main` por el equipo de Documentación.
+
+---
+*Documento generado para la materia de Ingeniería de Software - Equipo Webtons.*
