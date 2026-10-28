@@ -99,7 +99,7 @@ En la situación actual, el paciente no tiene una herramienta unificada, por lo 
 
 **Consultas pendientes:** 
 - No sabemos con certeza qué porcentaje de centros de salud usan sistemas digitales para registrar su ocupación actualmente.
-![alt text](image-1.png)
+![alt text](image.png)
 
 ---
 
