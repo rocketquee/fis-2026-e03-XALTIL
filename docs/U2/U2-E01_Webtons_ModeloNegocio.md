@@ -99,6 +99,7 @@ En la situación actual, el paciente no tiene una herramienta unificada, por lo 
 
 **Consultas pendientes:** 
 - No sabemos con certeza qué porcentaje de centros de salud usan sistemas digitales para registrar su ocupación actualmente.
+
 ![alt text](image.png)
 
 ---
@@ -113,6 +114,8 @@ El sistema debe permitir visualizar el nivel de saturación y el tiempo estimado
 
 **Prueba propuesta:** 
 Ingresar la ubicación "Centro de la ciudad" y la especialidad "Medicina General". El sistema debe mostrar una lista con al menos 3 centros de salud, su nivel de saturación (Bajo, Medio, Alto) y un tiempo estimado de traslado. Al seleccionar uno con disponibilidad, debe permitir generar la solicitud de turno y mostrar un mensaje de confirmación.
+
+
 ![alt text](to-be.png)
 ---
 
