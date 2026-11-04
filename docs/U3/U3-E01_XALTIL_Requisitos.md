@@ -9,13 +9,13 @@
 **Materia:** Fundamentos de Ingeniería de Software (SCC-1007)
 
 **Integrantes:**
-- García Villegas Jorge Ignacio
-- Martínez Aquino Jonnatan
-- Obregon Estrada Emmanuel
-- Ortiz Saucedo Jesús Adán
+- García Villegas Jorge Ignacio --- Calidad y Documentacion
+- Martínez Aquino Jonnatan -------- Desarrollo
+- Obregon Estrada Emmanuel -------- Cordinacion
+- Ortiz Saucedo Jesús Adán -------- Analisis
 
-**Responsable de integración:** Por asignar  
-**Responsable de revisión:** Por asignar  
+**Responsable de integración:**  Jonnatan Martinez Aquino(desarrollo)
+**Responsable de revisión:**  Garcia Villegas Jorge Ignacion (Calidad y Docucemntacion)
 
 ---
 
