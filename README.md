@@ -2,13 +2,10 @@
 Equipo: Webtons
 
 ## Integrantes
-* Martinez Aquino Jonnatan — Coordinación  
-
-* Obregon Estrada Emmanuel — Análisis  
-
-* Garcia Villegas Jorge Ignacio — Desarrollo  
-
-* Ortiz Saucedo Jesus Adan — Calidad y documentación  
+* García Villegas Jorge Ignacio --- Calidad y Documentacion
+* Martínez Aquino Jonnatan -------- Desarrollo
+* Obregon Estrada Emmanuel -------- Cordinacion
+* Ortiz Saucedo Jesús Adán -------- Analisis
 
 
 ## Organización
