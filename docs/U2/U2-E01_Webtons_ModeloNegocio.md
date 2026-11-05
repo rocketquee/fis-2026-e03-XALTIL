@@ -22,17 +22,20 @@
    - [1. Delimitación del proceso](#1-delimitación-del-proceso)
    - [2. Stakeholders](#2-stakeholders)
 3. [B. Propuesta de valor](#b-propuesta-de-valor)
+   - [3. Propuesta de valor](#3-propuesta-de-valor)
+   - [4. Suposiciones por comprobar](#4-suposiciones-por-comprobar)
 4. [C. Proceso actual y mejora](#c-proceso-actual-y-mejora)
    - [5. Proceso Actual (AS-IS)](#5-proceso-actual-as-is)
    - [6. Mejora Propuesta (TO-BE)](#6-mejora-propuesta-to-be)
    - [7. Preguntas para responder sin leer](#7-preguntas-para-responder-sin-leer)
 5. [D. Verificación del avance (Parte D)](#d-verificación-del-avance-parte-d)
+   - [8. Verificación del avance](#8-verificación-del-avance)
 
 ---
 
 ## A. Acuerdo
 
-## 1. Delimitación del proceso
+### 1. Delimitación del proceso
 
 | Elemento | Respuesta del equipo |
 | :--- | :--- |
@@ -44,13 +47,13 @@
 | **Final** | El usuario recibe la confirmación de su turno o cita, o decide acudir a otro centro porque no hay disponibilidad. |
 | **Usuario directo** | Pacientes y familiares que necesitan atención médica oportuna. |
 | **Otros stakeholders** | Personal administrativo y de recepción de los centros de salud, directivos y administradores de hospitales, equipo que mantiene la plataforma. |
-| **Problema concreto** | No existe un sistema unificado con información en tiempo real sobre ocupación, disponibilidad y tiempos de espera, así que el usuario se desplaza sin saber si lo van a atender a tiempo. |
+| **Problema concreto** | El paciente no cuenta con información unificada y actualizada sobre ocupación, disponibilidad y tiempo de espera antes de desplazarse; por ello acude al centro de salud sin certeza de que lo atiendan y puede realizar desplazamientos innecesarios. La mejora busca reducir esa incertidumbre y los traslados a centros sin disponibilidad. |
 | **Valor esperado** | Que el usuario decida a qué centro ir antes de salir, con menos desplazamientos innecesarios y menos tiempo perdido. |
-| **Indicador** | Diferencia entre el tiempo de espera que muestra la plataforma y el tiempo real que espera el paciente en el centro de salud. |
+| **Indicador** | Reducción de la diferencia entre el tiempo de espera publicado por la plataforma y el tiempo de espera real registrado en el centro, medida antes y después de la mejora. También se registra el porcentaje de consultas que terminan en un turno confirmado sin traslado a otro centro. |
 
 ---
 
-## 2. Stakeholders
+### 2. Stakeholders
 
 | Stakeholder | Participación | Necesidad |
 | :--- | :--- | :--- |
@@ -62,11 +65,13 @@
 
 ---
 
-## 3. Propuesta de valor
+## B. Propuesta de valor
 
-Para los pacientes y familiares que buscan atención médica, que actualmente enfrentan la falta de información centralizada sobre la ocupación y los tiempos de espera de los centros de salud, nuestro sistema permitirá decidir a qué centro acudir antes de salir de casa mediante una plataforma web que muestra la saturación, la disponibilidad y el tiempo estimado de traslado de cada centro.
+### 3. Propuesta de valor
 
-La mejora se comprobará mediante la comparación entre el tiempo de espera que muestra la plataforma y el tiempo real que espera el paciente en el centro de salud.
+Para los pacientes y familiares que buscan atención médica, que actualmente no disponen de información centralizada y actualizada sobre la ocupación y los tiempos de espera de los centros de salud, nuestro sistema permitirá decidir a qué centro acudir antes de salir de casa mediante una plataforma web que muestra la saturación, la disponibilidad y el tiempo estimado de traslado de cada centro.
+
+La mejora se comprobará mediante la comparación entre el tiempo de espera que muestra la plataforma y el tiempo real que espera el paciente en el centro de salud, y mediante el porcentaje de consultas que concluyen en un turno confirmado sin necesidad de acudir a otro centro.
 
 **Lo que no prometemos:**
 - Eliminar por completo las esperas en los centros de salud.
@@ -75,7 +80,7 @@ La mejora se comprobará mediante la comparación entre el tiempo de espera que 
 
 ---
 
-## 4. Suposiciones por comprobar
+### 4. Suposiciones por comprobar
 
 > **Nota:** Esto todavía no lo hemos comprobado, por eso lo registramos como suposición.
 
@@ -86,7 +91,9 @@ La mejora se comprobará mediante la comparación entre el tiempo de espera que 
 
 ---
 
-## 5. Proceso Actual (AS-IS)
+## C. Proceso actual y mejora
+
+### 5. Proceso Actual (AS-IS)
 
 En la situación actual, el paciente no tiene una herramienta unificada, por lo que el proceso suele ser el siguiente:
 
@@ -97,6 +104,8 @@ En la situación actual, el paciente no tiene una herramienta unificada, por lo 
 | **3** | Paciente o familiar | Se desplaza al centro de salud sin saber si hay saturación o disponibilidad. |
 | **4** | Personal de recepción | Recibe al paciente, verifica la disponibilidad en su sistema interno y le informa. |
 | **5** | Paciente o familiar | Espera su turno en el centro de salud. |
+
+**Figura 1.** Diagrama AS-IS del proceso actual. Elaboración propia. El diagrama representa únicamente la situación actual y no incluye funciones de XALTIL. Está disponible en el repositorio de GitHub, en la carpeta `docs/U2`, archivo `DIAGRAMAS .pdf` (página 2).
 
 **Decisión y Regla del proceso actual:**
 - **Condición que se comprueba:** ¿Hay disponibilidad en el centro de salud?
@@ -109,10 +118,12 @@ En la situación actual, el paciente no tiene una herramienta unificada, por lo 
 
 ---
 
-## 6. Mejora Propuesta (TO-BE)
+### 6. Mejora Propuesta (TO-BE)
 
 **Descripción de la mejora:** 
 El sistema centraliza la información de los centros de salud. En lugar de que el paciente llame o se desplace a ciegas, la plataforma web muestra en tiempo real la saturación, el tiempo estimado de espera y el tiempo de traslado. El paciente decide desde su casa y solicita su turno o cita en línea.
+
+**Figura 2.** Diagrama TO-BE del proceso propuesto. Elaboración propia. El diagrama separa las responsabilidades en tres carriles: Paciente o familiar, Personal de recepción y administrativo, y Sistema XALTIL. Está disponible en el repositorio de GitHub, en la carpeta `docs/U2`, archivo `DIAGRAMAS .pdf` (página 1).
 
 **Requisito:** 
 El sistema debe permitir visualizar el nivel de saturación y el tiempo estimado de traslado de los centros de salud más cercanos a la ubicación ingresada por el paciente antes de solicitar un turno.
@@ -123,24 +134,26 @@ Ingresar la ubicación "Centro de la ciudad" y la especialidad "Medicina General
 
 ---
 
-## 7. Preguntas para responder sin leer
+### 7. Preguntas para responder sin leer
 
 1. **¿Qué proceso estudia?** La consulta de disponibilidad y la reserva de un turno en un centro de salud.
 2. **¿Dónde comienza y termina?** Comienza cuando el usuario busca un centro y termina cuando recibe su turno o decide ir a otro lado.
 3. **¿Quién lo utiliza?** Pacientes y familiares.
 4. **¿Quién más resulta interesado o afectado?** El personal y los directivos de los centros de salud, y el equipo que mantiene la plataforma.
-5. **¿Qué problema existe?** No hay información unificada en tiempo real, y el usuario se desplaza sin saber si lo atenderán a tiempo.
+5. **¿Qué problema existe?** El paciente no cuenta con información unificada y actualizada sobre ocupación, disponibilidad y tiempo de espera antes de desplazarse, por lo que acude al centro sin certeza de que lo atiendan y puede realizar traslados innecesarios.
 6. **¿Qué valor aportaría el software?** Permitir decidir a dónde ir antes de salir, con menos desplazamientos innecesarios.
 7. **¿Cómo se comprobaría la mejora?** Comparando el tiempo de espera mostrado con el tiempo real.
 
 ---
 
-## 8. Verificación del avance (Parte D)
+## D. Verificación del avance (Parte D)
+
+### 8. Verificación del avance
 
 - **Contenido:** El alcance del proceso, el problema y el indicador coinciden en todas las secciones (A y B).
-- **Diagramas:** Se revisó el diagrama TO-BE con el equipo, asegurando que las acciones tengan responsables claros y las decisiones tengan sus condiciones.
+- **Diagramas:** Se revisó el diagrama TO-BE con el equipo, asegurando que las acciones tengan responsables claros y las decisiones tengan sus condiciones. El diagrama AS-IS se limita a la situación actual y el TO-BE separa las responsabilidades en tres carriles.
 - **Correcciones:** Se revisaron las dudas sobre la integración de los sistemas de los hospitales, quedando registradas como supuestos en la sección 4.
-- **Publicación:** Archivo integrado en la carpeta `U2-E01` y publicado en la rama `main` por el equipo de Documentación.
+- **Publicación:** Archivo integrado en la carpeta `docs/U2` y listo para su publicación en la rama `main` por el equipo de Documentación.
 
 ---
-*Documento generado para la materia de Ingeniería de Software - Equipo Webtons.*
+*Ingeniería de Software - Equipo Webtons.*
