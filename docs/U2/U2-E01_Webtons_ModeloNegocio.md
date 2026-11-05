@@ -1,8 +1,11 @@
 # U2-E01: Inicio del modelado del negocio - Proyecto XALTIL
 
+## Identificación
+
 **Equipo:** Webtons  
 **Proyecto:** XALTIL  
 **Fecha:** 07/10/2026  
+**Fecha de revisión de calidad:** 05/11/2026  
 **Tarjeta de Trello:** `[ACT-12][U2-E01] Modelar el negocio del proyecto`
 
 **Integrantes:**
@@ -14,16 +17,20 @@
 ---
 
 ## Tabla de Contenido
-1. [Delimitación del proceso](#1-delimitación-del-proceso)
-2. [Stakeholders](#2-stakeholders)
-3. [Propuesta de valor](#3-propuesta-de-valor)
-4. [Suposiciones por comprobar](#4-suposiciones-por-comprobar)
-5. [Proceso Actual (AS-IS)](#5-proceso-actual-as-is)
-6. [Mejora Propuesta (TO-BE)](#6-mejora-propuesta-to-be)
-7. [Preguntas para responder sin leer](#7-preguntas-para-responder-sin-leer)
-8. [Verificación del avance (Parte D)](#8-verificación-del-avance-parte-d)
+1. [Identificación](#identificación)
+2. [A. Acuerdo](#a-acuerdo)
+   - [1. Delimitación del proceso](#1-delimitación-del-proceso)
+   - [2. Stakeholders](#2-stakeholders)
+3. [B. Propuesta de valor](#b-propuesta-de-valor)
+4. [C. Proceso actual y mejora](#c-proceso-actual-y-mejora)
+   - [5. Proceso Actual (AS-IS)](#5-proceso-actual-as-is)
+   - [6. Mejora Propuesta (TO-BE)](#6-mejora-propuesta-to-be)
+   - [7. Preguntas para responder sin leer](#7-preguntas-para-responder-sin-leer)
+5. [D. Verificación del avance (Parte D)](#d-verificación-del-avance-parte-d)
 
 ---
+
+## A. Acuerdo
 
 ## 1. Delimitación del proceso
 

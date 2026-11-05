@@ -1,8 +1,0 @@
-PAGES 2
---- page 1
-DIAGRAMA TO - BE
- 
-
---- page 2
-DIAGRAMA AS - IS
- 
