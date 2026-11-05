@@ -1,0 +1,61 @@
+PAGES 3
+--- page 1
+ 
+Instituto Tecnológico de San Pedro Coahuila 
+Ingeniería en Sistemas Computacionales  
+Asignatura: Fundamentos de Ingeniería de Software  
+U2-E04 | Bitácora individual  
+XALTIL  
+Nombre del alumno: Ortiz Saucedo Jesús Adan  
+Nombre del Docente: Ruth Aivi Chávez Roriguez  
+Fecha: 28/ Octubre/ 2026
+
+--- page 2
+2 
+ 
+Registro de bitácoras 
+Registro 1 
+Fecha: 8 de octubre de 2026 
+Actividad: ACT-01 
+Actividad evaluada: U2-E04 
+Caso: Ayuda a compañero. 
+Responsabilidad: Ayude a mi compañero a verificar la información de la actividad 1. 
+Hallazgo: Iba viendo si la información que agregaba mi compañero Jonatan Martínez en cada espacio 
+requerido está bien, realizamos cambio de roles y quede como coordinador, tambien pedí que pasara el 
+documento al grupo de WhatsApp para que mis compañeros pudieran mirarlo. 
+Decisión: Seguir comprobando que este bien el documento. 
+Siguiente paso: Verificar que los demás hayan leído el documento. 
+Evidencia: Documento de la actividad ya terminado. 
+ 
+Registro 2 
+Fecha: 15 de octubre de 2026 
+Actividad: ACT-02 
+Actividad evaluada: U2-E04 
+Caso: Empezar con el análisis individual. 
+Responsabilidad: Leer cada parte de cómo se realizará el análisis y empezar a guiarme con el proyecto. 
+Hallazgo: Fui avanzándole al análisis, aunque no lo termine ese mismo día, tambien ese día pedí a mi 
+compañero Jonatan Martínez que fuera a revisar avances, tambien aclare dudas de Emanuel. 
+Decisión: Hice una lectura detallada de todo el documento. 
+Siguiente paso: Avanzarle algo al análisis. 
+Evidencia: Análisis aun por terminar. 
+ 
+ 
+ 
+--- page 3
+3 
+ 
+ 
+Registro 3 
+Fecha: 21 de octubre de 2026 
+Actividad: ACT-03 
+Actividad evaluada: U1-E01 
+Caso: Asignación de trabajos. 
+Responsabilidad: Agregar tarjetas al trello. 
+Hallazgo: Asigne a Jorge y Emanuel para la realización de los diagramas, en lo que determinaban como lo 
+realizarían cree las tarjetas en el trello. 
+Decisión: Crear tarjetas en trello y asignar responsables. 
+Siguiente paso: Aclarar dudas sobre el trabajo a realizar. 
+Evidencia: Diagramas en proceso de revisión. 
+ 
+ 
+ 

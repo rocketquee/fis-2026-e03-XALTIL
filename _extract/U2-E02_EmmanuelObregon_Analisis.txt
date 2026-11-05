@@ -1,0 +1,185 @@
+PAGES 4
+--- page 1
+Datos iniciales 
+Nombre: Emmanuel Obregón Estrada  
+Título: Análisis del proceso y mejora de XALTIL 
+Equipo: Webtons  
+Proyecto: XALTIL 
+Proceso y mejora que analizaré:  Analizaré la consulta de saturación, 
+disponibilidad y tiempos de espera de los centros de salud. La mejora busca ofrecer 
+información actualizada y confiable para que los pacientes decidan a dónde acudir. 
+1. Qué debe cumplirse (Regla)  
+ Regla y paso donde se aplica 
+La información de XALTIL debe estar actualizada y no exponer datos personales de 
+los pacientes. Se aplica al recibir y publicar datos de los hospitales. 
+ Cómo sé que esa regla existe: 
+https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPDPPSO.pdf 
+La Ley General de Protección de Datos Personales en Posesión de Sujetos 
+Obligados establece reglas para proteger datos personales sensibles, como los 
+relacionados con la salud. 
+ Quién la comprueba y con qué información 
+Revisaría la actualización de los datos y el personal de cada hospital confirmaría su 
+exactitud. También se verificaría que no se publiquen datos personales. 
+ Un ejemplo donde se cumple y qué ocurre 
+Un hospital confirma su disponibilidad y XALTIL muestra información actualizada 
+sin revelar datos de pacientes. Así, los usuarios pueden decidir mejor. 
+--- page 2
+ Un ejemplo donde no se cumple y qué ocurre 
+Un hospital no actualiza sus datos y la plataforma muestra turnos disponibles 
+cuando ya no existen. Esto provoca traslados innecesarios y desconfianza. 
+ Qué consultaría si falta confirmarlo 
+Preguntaría a los hospitales qué sistemas utilizan, cada cuánto actualizan sus datos 
+y quién autoriza compartirlos. También consultaría los requisitos legales aplicables. 
+2. Qué podría salir mal (Riesgos) 
+Los siguientes riesgos se relacionan con las dificultades identificadas en el proyecto 
+XALTIL, especialmente la actualización de datos y la integración de sistemas 
+distintos. 
+¿Qué podría 
+ocurrir? 
+¿Por qué?  ¿A quién o qué 
+actividad 
+afectaría?  
+¿Qué haría para prevenirlo 
+y atenderlo?  
+La plataforma 
+muestra tiempos 
+de espera o 
+disponibilidad 
+incorrectos. 
+Los hospitales no 
+actualizan los 
+datos con 
+suficiente 
+frecuencia o el 
+personal no tiene 
+tiempo para 
+hacerlo. 
+Pacientes, 
+familiares, 
+personal de 
+recepción y 
+proceso de 
+consulta de 
+disponibilidad. 
+Acordar una frecuencia de 
+actualización con cada 
+centro, registrar la fecha y 
+hora del último dato 
+recibido y mostrar una 
+advertencia cuando la 
+información esté 
+desactualizada. Si se 
+detecta un error, solicitar 
+la corrección al 
+responsable. 
+Los datos de 
+distintos 
+hospitales no se 
+integran 
+correctamente o 
+se expone 
+información 
+sensible. 
+Cada institución 
+puede utilizar 
+sistemas 
+diferentes y no se 
+han confirmado 
+los requisitos de 
+integración ni las 
+reglas de 
+privacidad. 
+Hospitales, 
+administradores, 
+equipo de 
+desarrollo, 
+pacientes y 
+funcionamiento 
+de XALTIL. 
+Definir un formato común 
+para los datos de 
+ocupación y disponibilidad, 
+realizar pruebas de 
+integración y revisar los 
+permisos y la información 
+que se publica. Si ocurre 
+un error, suspender la 
+publicación de los datos 
+afectados hasta corregirlo 
+y verificar su seguridad. 
+--- page 3
+3. Qué necesitamos (Factibilidad)  
+Que revisa  Tu respuesta  
+Herramientas y datos: ¿qué 
+necesitamos, ¿qué tenemos y qué falta 
+comprobar?  
+Necesitamos una plataforma web, una base de 
+datos y una forma de recibir y actualizar los 
+datos de ocupación, disponibilidad y tiempos de 
+espera. El proyecto ya contempla una 
+plataforma web con geolocalización, un 
+semáforo de saturación y tiempos estimados. 
+Falta comprobar qué sistemas usan los 
+hospitales, si compartirán sus datos, con qué 
+frecuencia los actualizarán y cómo se 
+integrarán con XALTIL. 
+Personas: ¿quién lo usaría, quién 
+revisaría y qué tendría que aprender? 
+Los pacientes y familiares utilizarían la 
+plataforma para consultar los centros médicos. 
+El personal administrativo y de recepción 
+proporcionaría y actualizaría los datos, mientras 
+que los responsables de los hospitales 
+autorizarían su publicación. El equipo Webtons 
+revisaría el funcionamiento y corregiría errores. 
+Se necesitaría aprender a actualizar la 
+información, utilizar la plataforma, detectar 
+datos incorrectos y proteger la información 
+personal. 
+Tiempo y recurso: ¿qué equipo, 
+acceso, tiempo o costo requiere y con 
+qué contamos? 
+Se necesita un equipo de cómputo con 
+conexión a internet, herramientas para 
+desarrollar y probar la plataforma, acceso 
+autorizado a los datos de los centros médicos y 
+tiempo para programar, integrar y verificar la 
+información. Contamos con la propuesta inicial 
+del proyecto y con la delimitación del proceso y 
+sus usuarios. Todavía falta comprobar la 
+disponibilidad de los hospitales, los recursos 
+técnicos, el tiempo de desarrollo y los posibles 
+costos de alojamiento y mantenimiento. 
+4. Termina tu análisis (Conclusión) 
+La mejora puede funcionar si los hospitales comparten información confiable y 
+actualizada, permitiendo que XALTIL ayude a los pacientes a elegir dónde acudir. 
+Falta comprobar la disposición de los hospitales, la inte gración de sus sistemas y 
+los requisitos de privacidad mediante entrevistas, pruebas técnicas y consultas de 
+la normativa oficial. 
+ 
+--- page 4
+Fuentes utilizadas 
+Cámara de Diputados del H. Congreso de la Unión. Ley General de Protección de 
+Datos Personales en Posesió n de Sujetos Obligados. Texto oficial gratuito, con 
+última reforma indicada al 14 de noviembre de 2025. 
+https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPDPPSO.pdf 
+Comisión Coordinadora de Institutos Nacionales de Salud y Hospitales de Alta 
+Especialidad. (2025, 5 de diciembre). Citas médicas. Gobierno de México.  
+https://www.gob.mx/insalud/articulos/citas-medicas-414410 
+Assistant Secretary for Technology Policy, & Office of the National Coordinator for 
+Health Information Technology. (2026, febrero). Hospital use of APIs to enable data 
+sharing between EHRs and third -party technology. HealthIT.gov. 
+https://healthit.gov/data/data-briefs/hospital-use-of-apis-to-enable-data-sharing-
+between-ehrs-and-third-party-technology/ 
+Documentos del equipo: Propuesta inicial del proyecto XALTIL y U2-E01 Webtons: 
+Modelado del negocio. 
+ 
+Declaración de uso de IA 
+Utilicé ChatGPT como apoyo para mejorar la redacción, organizar mis ideas y 
+buscar fuentes confiables relacionadas con el proyecto.  El contenido y el análisis 
+los redacté yo, utilizando la IA para corregir la ortografía, hacer más claras las 
+explicaciones y localizar información que después revisé con las fuentes 
+consultadas.  
+ 
+ 
+ 

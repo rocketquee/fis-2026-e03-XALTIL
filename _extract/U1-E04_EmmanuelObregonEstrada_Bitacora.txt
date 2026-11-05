@@ -1,0 +1,139 @@
+PAGES 5
+--- page 1
+ 
+Instituto Tecnológico de San Pedro Coahuila 
+Ingeniería en Sistemas Computacionales 
+Asignatura: Fundamentos de Ingeniería de Software 
+U1-E04 Bitácora individual  
+Nombre alumno: Obregon Estrada Emmanuel  
+Docente: Ruth Aivi Chávez Rodriguez 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+San Pedro Coahuila                                                                                                  29/09/26 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- page 2
+ 
+Bitácora de la unidad 1 . 
+Entrada 1 
+Fecha 10 de septiembre de 2026 
+Actividad ACT-01 
+Actividad evaluada U1-E01 
+Tipo de actividad Equipo. 
+Responsabilidad (Análisis)  
+Analizar qué responsabilidad podría asumir 
+cada integrante en el acta de organización. 
+Hallazgo Al revisar el trabajo con el equipo, identifique las 
+actividades que podía realizar cada integrante y 
+qué responsabilidad podría corresponderle. 
+Decisión Proponer los nombres y responsabilidades de 
+cada integrante, tomando en cuenta sus 
+actividades y las indicaciones del coordinador. 
+Siguiente paso Compartir la primera versión del documento con 
+el equipo para revisarlo y confirmar las 
+aportaciones.  
+Evidencia Documento del proyecto en GitHub y 
+Classroom. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- page 3
+ 
+Entrada 2 
+Fecha 15 de septiembre de 2026 
+Actividad ACT-01 
+Actividad evaluada U1-E01 
+Tipo de actividad Equipo. 
+Responsabilidad (Análisis) 
+Analizar el proyecto y la situación de los 
+pacientes. 
+Hallazgo Identifiqué la necesidad de contar con un 
+sistema unificado para consultar información 
+sobre los centros de salud y observé las 
+consecuencias de no tenerlo. También encontré 
+algunos errores de ortografía en el documento. 
+Decisión Incluir las consecuencias de no contar con un 
+sistema unificado, definir qué debe mejorar, qué 
+proponemos crear y qué elementos quedarán 
+dentro y fuera del proyecto. También corregir los 
+errores de ortografía encontrados. 
+Siguiente paso Compartir el documento corregido con el equipo 
+para que revisen los cambios y den su opinión. 
+Evidencia Documento del proyecto en GitHub y 
+Classroom. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- page 4
+ 
+Entrada 3 
+Fecha 29 de septiembre de 2026 
+Actividad ACT-05 
+Actividad evaluada U1-E02 
+Tipo de actividad Individual 
+Caso:  C02 - Plataforma de inscripción escolar 
+Responsabilidad (Análisis) 
+Analizar el caso asignado y sus problemáticas 
+de Ingeniería de Software. 
+Hallazgo Identifiqué problemas de rendimiento, 
+solicitudes duplicadas, errores en los cupos, 
+falta de control de cambios y poca trazabilidad 
+en los reportes de soporte. 
+Decisión Relacionar cada problema con una práctica de 
+Ingeniería de Software y proponer tres acciones 
+para atender primero los problemas más 
+importantes. 
+Siguiente paso Revisar el análisis y atender las indicaciones o 
+comentarios que se reciban sobre el trabajo. Así 
+como también actualizar la tarjeta Trello a la fila 
+“terminado”.  
+Evidencia Documento de análisis individual del caso C02 
+subido a GitHub y a Classroom 
+ 
+ 
+ 
+ 
+--- page 5
+ 
+ 
+ 
+Entrada 4 
+Fecha 30 de septiembre de 2026 
+Actividad ACT-09 
+Actividad evaluada U1-E01 
+Tipo de actividad En equipo 
+Responsabilidad (Análisis)  
+Participar en la elaboración de los acuerdos de 
+trabajo del equipo para organizar la forma de 
+trabajar en el proyecto XALTIL. 
+Hallazgo Identificamos la necesidad de establecer 
+acuerdos sobre la comunicación, actualización 
+de Trello, revisión de archivos, fechas internas y 
+forma de aprobar las entregas. 
+Decisión Definir reglas para organizar mejor el trabajo, 
+establecer las responsabilidades de cada 
+integrante y mantener un proceso claro para 
+revisar y entregar los archivos. 
+Siguiente paso Acomodar la estructura del documento y revisar 
+con el equipo que los acuerdos estén completos 
+y sean claros. 
+Evidencia Documento de acuerdos de trabajo del equipo. 
+ 

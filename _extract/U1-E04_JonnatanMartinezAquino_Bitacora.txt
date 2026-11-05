@@ -1,0 +1,134 @@
+PAGES 3
+--- page 1
+Bitácora Individual 
+U1-E04 
+Martínez Aquino Jonnatan  
+Equipo Webtons  
+(Proyecto XALTIL) 
+Registro 1 
+Fecha y número de actividad 23 de septiembre de 2026 — ACT-04 
+Evidencia relacionada U1-E01 
+Tipo de actividad De equipo (mi aportación individual) 
+Caso asignado No aplica 
+Responsabilidad y trabajo 
+realizado 
+Me tocó armar el tablero de Trello del equipo desde cero. Lo estructuré 
+en las cuatro columnas que usamos ahora (Por hacer, En proceso, En 
+Revisión y Terminado) y ahí fui metiendo las cuatro correcciones que ya 
+teníamos identificadas del expediente. 
+Resultado o hallazgo 
+obtenido 
+Mientras armaba las tarjetas me di cuenta de que había una repetida, 
+porque 'Investigación de Metodologías y Herramientas' y la del C6-A01 
+eran en realidad el mismo documento con nombre distinto. 
+Decisión, siguiente paso y 
+evidencia generada 
+Deje solo una tarjeta por corrección y reescribí el contenido de 'En 
+proceso' para que cada una dijera exactamente qué se debía arreglar, en 
+vez de dejarlo genérico. Evidencia: tablero de Trello del equipo XALTIL.  
+ 
+Registro 2 
+Fecha y número de actividad 27 de septiembre de 2026 — ACT-06 
+Evidencia relacionada U1-E01 
+Tipo de actividad De equipo (mi aportación individual) 
+Caso asignado No aplica 
+Responsabilidad y trabajo 
+realizado 
+Revisé el README.md del repositorio y note que le faltaba bastante 
+información básica del equipo. 
+Resultado o hallazgo 
+obtenido 
+Faltaban el nombre del equipo, los roles de cada quien y el enlace del 
+tablero de Trello, asi que el archivo se veia incompleto para cualquiera 
+que entrara al repositorio. 
+Decisión, siguiente paso y 
+evidencia generada 
+Complete el README agregando el nombre (Webtons), los roles segun 
+el acta de organizacion, y deje el espacio listo para el link de Trello. 
+Evidencia: archivo README.md actualizado. 
+ 
+Registro 3 
+Fecha y número de actividad 27 de septiembre de 2026 — ACT-07 
+Evidencia relacionada U1-E01 
+Tipo de actividad De equipo (mi aportación individual) 
+Caso asignado No aplica 
+Responsabilidad y trabajo 
+realizado 
+Revise que la estructura de carpetas del repositorio realmente coincidiera 
+con lo que ya decia el README. 
+Resultado o hallazgo 
+obtenido 
+Encontre que las carpetas docs/U1-E01, docs/U1-E02, docs/U1-E04 y 
+gestion/acuerdos no se veian en GitHub por estar vacias, y que 
+--- page 2
+'acuerdos' y 'bitacoras' estaban sueltas en la raiz del proyecto en lugar de 
+estar dentro de gestion, como deberia ser. 
+Decisión, siguiente paso y 
+evidencia generada 
+Cree la carpeta gestion, meti ahi acuerdos y bitacoras, y agregue 
+archivos .gitkeep en las carpetas vacias para que Git pudiera subirlas. 
+Evidencia: repositorio en GitHub con la estructura completa visible. 
+ 
+Registro 4 
+Fecha y número de actividad 27 de septiembre de 2026 — ACT-08 
+Evidencia relacionada U1-E02 
+Tipo de actividad Individual 
+Caso asignado C01 - Sistema de citas de una clínica 
+Responsabilidad y trabajo 
+realizado 
+Me toco analizar el caso C01 (letra A). Lo lei con calma para identificar 
+los problemas reales que tenia el sistema descrito, mas alla de que 'la 
+pantalla funcionara'. 
+Resultado o hallazgo 
+obtenido 
+Detecte que el problema principal era que dos recepcionistas podian 
+reservar el mismo horario casi al mismo tiempo, y que ademas no 
+quedaba registro de quien modificaba o cancelaba una cita. 
+Decisión, siguiente paso y 
+evidencia generada 
+Redacte el analisis completo con los cinco problemas (causa, 
+consecuencia, practica de Ingenieria de Software y evidencia), las tres 
+acciones prioritarias, mi reflexion personal y la declaracion de fuentes. 
+Evidencia: E03_U1-E02_C01_Jonnatan_Martinez_Analisis.pdf. 
+ 
+Registro 5 
+Fecha y número de actividad 28 de septiembre de 2026 — ACT-09 
+Evidencia relacionada U1-E01 
+Tipo de actividad De equipo (mi aportación individual) 
+Caso asignado No aplica 
+Responsabilidad y trabajo 
+realizado 
+Volvi a revisar el README y tambien el avance general del equipo. 
+Resultado o hallazgo 
+obtenido 
+El README tenia la info de integrantes y organizacion escrita toda de 
+corrido, se veia desordenado. Ademas note que el equipo iba un poco 
+atrasado con las correcciones que les tocaban. 
+Decisión, siguiente paso y 
+evidencia generada 
+Le di mejor formato visual al README y hable con el equipo para dar 
+seguimiento a lo que faltaba. Evidencia: README.md actualizado con el 
+nuevo formato. 
+ 
+Registro 6 
+Fecha y número de actividad 29 de septiembre de 2026 — ACT-10 
+Evidencia relacionada U1-E01 
+Tipo de actividad De equipo (mi aportación individual) 
+Caso asignado No aplica 
+Responsabilidad y trabajo 
+realizado 
+Ya con el documento de investigacion corregido, intente subir los 
+cambios al repositorio (Pull origin) para integrarlo. 
+Resultado o hallazgo 
+obtenido 
+Me salio un error: un compañero habia subido un archivo con un nombre 
+invalido para Windows (terminaba en punto), y eso bloqueaba a todo el 
+equipo para actualizar el repositorio. 
+Decisión, siguiente paso y 
+evidencia generada 
+Corregi el nombre del archivo directamente desde GitHub.com para 
+desbloquear al equipo, e integre el documento de investigacion ya 
+corregido. Evidencia: documento de investigacion actualizado en el 
+repositorio. 
+--- page 3
+ 
