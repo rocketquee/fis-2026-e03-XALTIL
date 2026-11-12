@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><title>XALTIL · Prototipo Fase 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--bg:#f4f1ea;--sf:#fbf9f4;--tx:#2b2a28;--mu:#6b665c;--bd:#e0d9cb;--pr:#b3405f;--pt:#fff;--ac:#f6dc9f;--act:#5c4300;--lo:#1d5a33;--lob:#d4ead9;--me:#6b4a00;--meb:#f8e6b0;--hi:#8f1d2c;--hib:#f6d3d6;--sb:#efeadf;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1c1b;--sf:#232625;--tx:#ece8df;--mu:#a9a69c;--bd:#363a38;--pr:#e48aa6;--pt:#2a0f18;--ac:#4a3d1b;--act:#f6dc9f;--lo:#9fddb3;--lob:#1f3a2a;--me:#f2d88c;--meb:#3f3416;--hi:#f5a8b0;--hib:#47232a;--sb:#202322}}
+:root[data-theme="dark"]{--bg:#1a1c1b;--sf:#232625;--tx:#ece8df;--mu:#a9a69c;--bd:#363a38;--pr:#e48aa6;--pt:#2a0f18;--ac:#4a3d1b;--act:#f6dc9f;--lo:#9fddb3;--lob:#1f3a2a;--me:#f2d88c;--meb:#3f3416;--hi:#f5a8b0;--hib:#47232a;--sb:#202322}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.55 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}:focus-visible{outline:3px solid var(--pr);outline-offset:2px}
+.app{display:grid;grid-template-columns:220px 1fr;min-height:100vh}
+aside{background:var(--sb);border-right:1px solid var(--bd);padding:18px 12px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:4px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:1.25rem;letter-spacing:.08em;padding:2px 8px 16px;line-height:1.1}.logo em{display:block;font-style:normal;font-weight:500;font-size:.62rem;letter-spacing:.02em;color:var(--mu)}
+nav{display:flex;flex-direction:column;gap:2px}nav a{padding:9px 12px;border-radius:10px;text-decoration:none;color:var(--mu);font-weight:500}
+nav a:hover{background:var(--bg)}nav a[aria-current=page]{background:var(--sf);color:var(--tx);font-weight:700;box-shadow:0 0 0 1px var(--bd)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;padding:12px 28px}.bc{color:var(--mu)}.bc b{color:var(--tx);font-weight:600}
+main{padding:0 28px 32px;max-width:1180px}
+.greca{height:12px;margin:0 0 18px;opacity:.55;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='12'%3E%3Cpath d='M0 10H4V4H12V9H16V2H24V10H28' fill='none' stroke='%23b3405f' stroke-width='1.5'/%3E%3C/svg%3E") repeat-x}
+button,.btn{font:inherit;cursor:pointer;border:1px solid var(--bd);background:var(--sf);color:var(--tx);padding:8px 14px;border-radius:10px;text-decoration:none;display:inline-block;font-weight:600}
+button:hover,.btn:hover{border-color:var(--mu)}.pri{background:var(--pr);color:var(--pt);border-color:var(--pr)}button[aria-pressed=true]{background:var(--ac);color:var(--act);border-color:var(--ac)}
+.chip{display:inline-block;background:var(--sb);border:1px solid var(--bd);border-radius:99px;padding:1px 10px;font-size:.78rem;font-weight:600}
+section.v{display:none}section.v.on{display:block}
+h1{font-size:1.7rem;margin:0 0 6px;font-weight:700;letter-spacing:-.02em}h2{font-size:1rem;margin:0 0 10px;font-weight:700}.mu{color:var(--mu)}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:14px;padding:18px}
+.g{display:grid;gap:16px}.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}.dash{grid-template-columns:1.5fr 1fr;align-items:start;margin-top:16px}
+.hd{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-end;margin-bottom:16px}.big{text-align:right}.big b{display:block;font-size:2.6rem;line-height:1.1;font-weight:700}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);padding:0}.strip div{padding:14px 18px;border-left:1px solid var(--bd)}.strip div:first-child{border:0}.strip small{color:var(--mu);font-weight:600;display:block}.strip b{font-size:1.7rem;font-weight:700;float:right;line-height:1.2}
+form.s{display:grid;gap:12px}label{font-size:.82rem;font-weight:600;display:block;margin-bottom:3px;color:var(--mu)}
+input,select{font:inherit;width:100%;padding:9px 10px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}.chips a{border:1px solid var(--bd);border-radius:99px;padding:4px 12px;text-decoration:none;background:var(--bg);font-size:.88rem}.chips a:hover{background:var(--ac);color:var(--act)}
+.tag{display:inline-block;padding:2px 10px;border-radius:99px;font-weight:700;font-size:.8rem}
+.Bajo{background:var(--lob);color:var(--lo)}.Medio{background:var(--meb);color:var(--me)}.Alto{background:var(--hib);color:var(--hi)}
+.res{display:grid;gap:16px;grid-template-columns:1.1fr 1fr;align-items:start}.c{display:grid;gap:8px}.c h3{margin:0;font-size:1.02rem}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.warn{background:var(--hib);color:var(--hi);border-radius:10px;padding:8px 12px;font-weight:600}.warn:before{content:"■ "}
+.ok{background:var(--lob);color:var(--lo);border-radius:10px;padding:8px 12px;font-weight:600}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:520px}th,td{padding:10px 8px;text-align:left;vertical-align:middle;border-bottom:1px solid var(--bd)}th{font-size:.8rem;color:var(--mu);font-weight:600}tr:last-child td{border:0}
+#v-comparar td,#v-comparar th{border:1px solid var(--bd)}td.best{background:var(--ac);color:var(--act);font-weight:700}
+svg.map,svg.ln{width:100%;height:auto;border-radius:10px;background:var(--bg)}
+.slots{display:flex;gap:8px;flex-wrap:wrap}.slots button:disabled{opacity:.55;text-decoration:line-through;cursor:not-allowed}
+.folio{font-size:1.9rem;font-weight:800;letter-spacing:.06em;color:var(--pr);margin:0}
+.steps{display:grid;gap:10px;margin:0;padding:0;list-style:none;counter-reset:s}.steps li{counter-increment:s;display:flex;gap:10px}.steps li:before{content:counter(s);flex:none;width:24px;height:24px;border-radius:50%;background:var(--ac);color:var(--act);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:.85rem}
+details summary{cursor:pointer;font-weight:700}details[open] summary{margin-bottom:8px}
+.rec{border-left:5px solid var(--ac)}
+body.min .opt{display:none}
+footer.rq{margin-top:24px;font-size:.75rem;color:var(--mu)}footer.site{margin-top:20px;border-top:1px solid var(--bd);padding-top:10px;font-size:.72rem;color:var(--mu)}
+.sr{position:absolute;left:-9999px}
+@media(max-width:900px){.app{grid-template-columns:1fr}aside{position:static;height:auto;border-right:0;border-bottom:1px solid var(--bd)}nav{flex-direction:row;overflow-x:auto}nav a{white-space:nowrap}.dash,.res{grid-template-columns:1fr}main,.top{padding-left:16px;padding-right:16px}.strip{grid-template-columns:1fr 1fr}.strip div:nth-child(3){border-left:0}.big{text-align:left}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body class="min">
+<a class="sr" href="#main" onfocus="this.style.left=0">Saltar al contenido</a>
+<div class="app">
+<aside><a class="logo" href="#inicio" aria-label="XALTIL, ir al inicio"><svg width="38" height="38" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--pr)"/><path d="M6 26V6H26V22H11V11H20V16" fill="none" stroke="var(--pt)" stroke-width="2.6" stroke-linecap="square"/><circle cx="24" cy="26" r="2.4" fill="#f6c453"/></svg><span>XALTIL<em>Salud con menos espera</em></span></a>
+<nav aria-label="Principal" id="nav"><a href="#inicio">▦ Inicio</a><a href="#buscar">⌕ Buscar</a><a href="#resultados">☰ Resultados</a><a href="#comparar">⇄ Comparar</a><a href="#turnos">▤ Mis turnos</a><a href="#favoritos">♡ Favoritos</a><a href="#info">? Cómo funciona</a></nav></aside>
+<div><div class="top"><div class="bc">Salud / <b id="crumb">Inicio</b></div><div class="row"><button id="mode" aria-pressed="true" title="Oculta lo secundario">◧ Vista simple</button><button id="th" aria-label="Cambiar entre modo claro y oscuro">◐ Tema</button></div></div>
+<main id="main"><div class="greca" aria-hidden="true"></div>
+
+<section class="v" id="v-inicio"><div class="hd"><div><h1>Centros de salud</h1><div class="row"><span class="chip">Servicio público</span><span class="mu">Miércoles 11 de noviembre</span></div><p class="mu" style="margin:6px 0 0">Última actualización: hoy, 10:42 (hora simulada)</p></div><div class="big"><span class="mu">Con disponibilidad hoy</span><b>4 de 6</b><a class="btn pri" href="#buscar">Buscar centro</a></div></div>
+<div class="card strip"><div><small>Nivel Bajo</small><b>2</b><span class="tag Bajo">● Bajo</span></div><div><small>Nivel Medio</small><b>2</b><span class="tag Medio">▲ Medio</span></div><div><small>Nivel Alto</small><b>2</b><span class="tag Alto">■ Alto</span></div><div><small>Espera promedio</small><b>38 min</b><span class="mu">6 centros</span></div></div>
+<div class="g dash"><div class="g"><div class="card"><h2>Mapa de zonas</h2><div id="map1"></div></div><div class="card"><div class="row" style="justify-content:space-between"><h2 style="margin:0">Centros ahora</h2><a href="#resultados">Ver todos →</a></div><div class="tw"><table id="tb"></table></div></div><div class="card opt"><h2>Espera promedio por hora (min)</h2><div id="ln"></div></div></div>
+<div class="g"><div class="card"><h2>¿Qué necesitas?</h2><form class="s" onsubmit="location.hash='resultados';return false"><div><label for="u1">Tu ubicación</label><input id="u1" placeholder="Ej. Colonia Las Palmas"></div><div><label for="e1">Especialidad</label><select id="e1"><option>Medicina general</option><option>Pediatría</option><option>Ginecología</option><option>Traumatología</option></select></div><button class="pri">Buscar</button></form><div class="chips" style="margin-top:12px"><a href="#resultados">Medicina general</a><a href="#resultados">Pediatría</a><a href="#resultados">Ginecología</a><a href="#resultados">Traumatología</a></div></div>
+<div class="card rec"><span class="chip" style="background:var(--ac);color:var(--act)">★ Mejor opción ahora</span><h2 style="margin:8px 0 4px">Clínica Río Sereno</h2><div class="row"><span class="tag Bajo">● Saturación: Bajo</span><span>Espera <b>15 min</b> · Traslado <b>8 min</b></span></div><p style="margin:10px 0 0"><a class="btn pri" href="#centro">Solicitar turno</a></p></div>
+<div class="card opt"><h2>Tu próximo turno</h2><div class="row"><b>XAL-2026-0412</b><span class="tag Bajo">✓ Confirmado</span></div><p style="margin:4px 0 8px">Clínica Río Sereno · 12 nov, 09:30</p><a class="btn" href="#turnos">Ver Mis turnos</a></div>
+<div class="card opt"><h2>Cómo funciona</h2><ol class="steps"><li><span>Dinos dónde estás y qué especialidad necesitas.</span></li><li><span>Compara saturación, espera y traslado.</span></li><li><span>Solicita tu turno y recibe tu folio.</span></li></ol></div>
+<details class="card opt"><summary>Preguntas frecuentes</summary><p><b>¿Qué significa el semáforo?</b><br>Bajo, Medio y Alto indican qué tan lleno está un centro.</p><p><b>¿Qué datos me piden?</b><br>Solo nombre y un teléfono de contacto para avisarte de tu turno.</p></details></div></div>
+<footer class="rq">Vista Inicio · RF-01 · RF-02 · RF-03</footer></section>
+
+<section class="v" id="v-buscar"><h1>Buscar centros</h1><p class="mu">Cuéntanos qué necesitas; los filtros son opcionales.</p>
+<form class="card g" onsubmit="location.hash='resultados';return false"><div class="g g2"><div><label for="u2">Ubicación</label><input id="u2" placeholder="Escribe tu colonia o calle"></div><div><label>&nbsp;</label><button type="button">⌖ Usar mi ubicación</button></div><div><label for="e2">Especialidad</label><select id="e2"><option>Medicina general</option><option>Pediatría</option></select></div></div>
+<details open><summary>Filtros y orden</summary><div class="g g2" style="margin-top:12px">
+<div><label for="f1">Distancia máxima</label><select id="f1"><option>5 km</option><option>10 km</option><option>25 km</option></select></div>
+<div><label for="f2">Saturación</label><select id="f2"><option>Cualquiera</option><option>Bajo</option><option>Medio</option><option>Alto</option></select></div>
+<div><label for="f3">Espera máxima</label><select id="f3"><option>30 min</option><option>60 min</option><option>Sin límite</option></select></div>
+<div><label for="f4">Tipo de centro</label><select id="f4"><option>Todos</option><option>Clínica</option><option>Centro de salud</option><option>Hospital</option></select></div>
+<div><label for="f5">Ordenar por</label><select id="f5"><option>Más cercano</option><option>Menor espera</option><option>Menor saturación</option></select></div>
+<label style="display:flex;gap:8px;align-items:center;align-self:end"><input type="checkbox" style="width:auto"> Solo con disponibilidad</label></div></details>
+<div><button class="pri">Ver resultados</button></div></form>
+<footer class="rq">Vista Buscar · RF-03 · RF-04</footer></section>
+
+<section class="v" id="v-resultados"><h1>Resultados</h1><p class="mu">Medicina general · cerca de Colonia Las Palmas · 6 centros</p>
+<div class="res"><div class="g" id="list"></div><div class="card"><div id="map2"></div><p class="mu" style="font-size:.8rem;margin:8px 0 0">Los números siguen el orden de la lista. Mapa esquemático.</p></div></div>
+<footer class="rq">Vista Resultados · RF-05 · RF-06 · RF-07</footer></section>
+
+<section class="v" id="v-comparar"><h1>Comparar centros</h1><p class="mu">Hasta 3 centros. La mejor opción por criterio lleva ✓ y fondo amarillo.</p>
+<div class="tw card"><table><caption class="sr">Comparación de centros</caption><thead><tr><th scope="col">Criterio</th><th scope="col">Clínica Río Sereno<br><button>Quitar</button></th><th scope="col">Centro de Salud Mirador<br><button>Quitar</button></th><th scope="col">Centro de Salud Colina Norte<br><button>Cambiar</button></th></tr></thead><tbody>
+<tr><th scope="row">Saturación</th><td class="best">● Bajo ✓ Mejor</td><td><span class="tag Bajo">● Bajo</span></td><td><span class="tag Medio">▲ Medio</span></td></tr>
+<tr><th scope="row">Espera estimada</th><td class="best">15 min ✓ Mejor</td><td>20 min</td><td>35 min</td></tr>
+<tr><th scope="row">Traslado</th><td>8 min</td><td>17 min</td><td class="best">6 min ✓ Mejor</td></tr>
+<tr><th scope="row">Consultorios disponibles</th><td class="best">4 ✓ Mejor</td><td>3</td><td>2</td></tr>
+<tr><th scope="row">Horario</th><td>7:00–21:00</td><td>8:00–18:00</td><td>24 horas</td></tr>
+<tr><th scope="row">Servicios</th><td>Consulta general, laboratorio</td><td>Consulta general, vacunación</td><td>Urgencias menores, pediatría</td></tr></tbody></table></div>
+<p><a class="btn pri" href="#centro">Elegir un centro</a></p>
+<footer class="rq">Vista Comparar · RF-07 · RF-08</footer></section>
+
+<section class="v" id="v-centro"><p><a href="#resultados">← Volver a resultados</a></p><h1>Clínica Río Sereno</h1>
+<div class="row"><span class="tag Bajo">● Saturación: Bajo</span><span>Espera 15 min</span><span>· Traslado 8 min</span><span>· 4 consultorios libres</span></div>
+<div class="g g2" style="margin-top:16px"><div class="card"><h2>Detalle</h2><p>Av. Ficticia 123 (dirección de ejemplo).<br>Horario: 7:00–21:00 · Tipo: clínica</p><p>Servicios: consulta general, pediatría, laboratorio.</p><button aria-pressed="false" onclick="this.setAttribute('aria-pressed',this.getAttribute('aria-pressed')!='true')">♡ Guardar en favoritos</button></div>
+<div class="card"><h2>Agenda tu turno</h2><label for="d">Fecha</label><input type="date" id="d" value="2026-11-12"><p style="margin:.8em 0 .3em"><b>Horario</b></p><div class="slots" role="group" aria-label="Horarios"><button aria-pressed="false" onclick="pick(this)">09:00</button><button aria-pressed="true" onclick="pick(this)">09:30</button><button aria-pressed="false" onclick="pick(this)">10:00</button><button disabled>10:30 · Horario no disponible</button><button aria-pressed="false" onclick="pick(this)">11:00</button></div>
+<p><label for="n">Nombre</label><input id="n" placeholder="Nombre"></p><p><label for="t">Teléfono de contacto</label><input id="t" inputmode="tel" placeholder="Solo para avisos del turno"></p><a class="btn pri" href="#confirmacion">Solicitar turno</a></div></div>
+<div class="g g2 opt" style="margin-top:16px"><details class="card"><summary>Cómo llegar</summary><p>Traslado estimado: 8 min en auto, 15 en transporte público, 28 a pie (cifras de ejemplo).</p></details><details class="card"><summary>Qué llevar</summary><ul style="margin:0;padding-left:18px"><li>Tu folio de turno</li><li>Identificación oficial</li></ul></details></div>
+<footer class="rq">Vista Detalle y agenda · RF-08 · RF-09</footer></section>
+
+<section class="v" id="v-confirmacion"><h1>Turno solicitado</h1><div class="ok" role="status">✓ Confirmado: tu turno quedó registrado.</div>
+<div class="card" style="margin-top:16px"><p class="mu" style="margin:0">Folio</p><p class="folio">XAL-2026-0412</p><p><b>Clínica Río Sereno</b> · Medicina general<br>Jueves 12 de noviembre, 09:30</p><p><b>A dónde acudir:</b> Av. Ficticia 123 (ejemplo), módulo de recepción A. Llega 10 minutos antes y presenta tu folio.</p><a class="btn pri" href="#turnos">Ver Mis turnos</a> <a class="btn" href="#inicio">Volver al inicio</a></div>
+<footer class="rq">Vista Confirmación · RF-10</footer></section>
+
+<section class="v" id="v-turnos"><h1>Mis turnos</h1><p class="mu">Se guardan solo durante esta sesión.</p>
+<div class="card"><div class="row"><b>XAL-2026-0412</b><span class="tag Bajo">✓ Confirmado</span></div><p style="margin:.3em 0 .8em">Clínica Río Sereno · Medicina general · 12 nov, 09:30</p><button>Cancelar turno</button></div>
+<footer class="rq">Vista Mis turnos · RF-11</footer></section>
+
+<section class="v" id="v-favoritos"><h1>Favoritos</h1><div class="g g2" id="favs"></div>
+<footer class="rq">Vista Favoritos · RF-12</footer></section>
+
+<section class="v" id="v-info"><h1>Cómo se actualizan los datos</h1>
+<div class="card"><p>La saturación se calcula con la ocupación de consultorios y la cola de espera que cada centro reporta.</p><ul><li><b>Bajo:</b> menos de 40 % de ocupación.</li><li><b>Medio:</b> entre 40 % y 75 %.</li><li><b>Alto:</b> más de 75 %.</li></ul><p>El traslado es una estimación y puede variar por el tráfico. XALTIL no ofrece diagnósticos ni guarda historiales clínicos.</p></div>
+<footer class="rq">Vista Información · RF-13</footer></section>
+<footer class="site">Datos de ejemplo · prototipo · Borrador pendiente de validar</footer>
+</main></div></div>
+<script>
+const C=[["Clínica Río Sereno","Clínica","Bajo","●",15,8,4,60,60],["Centro de Salud Mirador","Centro de salud","Bajo","●",20,17,3,300,70],["Centro de Salud Colina Norte","Centro de salud","Medio","▲",35,6,2,180,150],["Clínica Santa Brisa","Clínica","Medio","▲",40,11,1,420,170],["Hospital General Los Tamarindos","Hospital","Alto","■",85,14,0,120,250],["Hospital Valle Claro","Hospital","Alto","■",70,22,0,380,260]];
+const N={inicio:"Inicio",buscar:"Buscar",resultados:"Resultados",comparar:"Comparar",centro:"Detalle del centro",confirmacion:"Confirmación",turnos:"Mis turnos",favoritos:"Favoritos",info:"Cómo funciona"};
+function card(c){const d=c[6]>0;return `<article class="card c">${c[0]=="Clínica Río Sereno"?'<span class="chip" style="background:var(--ac);color:var(--act);justify-self:start">★ Mejor opción ahora</span>':''}<h3>${c[0]}</h3><div class="row"><span class="tag ${c[2]}">${c[3]} Saturación: ${c[2]}</span><span class="chip">${c[1]}</span></div><div>Espera <b>${c[4]} min</b> · Traslado <b>${c[5]} min</b></div>${d?`<div class="ok">✓ ${c[6]} consultorios disponibles</div>`:`<div class="warn" role="alert">Sin disponibilidad: no hay turnos libres hoy en este centro.</div>`}<div class="row"><a class="btn" href="#comparar">Comparar</a><a class="btn" href="#centro">Ver detalle</a>${d?`<a class="btn pri" href="#centro">Solicitar turno</a>`:`<a class="btn pri" href="#resultados">Elegir otro centro</a>`}</div></article>`}
+function map(){const f=s=>s=="Bajo"?"var(--lob)":s=="Medio"?"var(--meb)":"var(--hib)",k=s=>s=="Bajo"?"var(--lo)":s=="Medio"?"var(--me)":"var(--hi)";return `<svg class="map" viewBox="0 0 480 310" role="img" aria-label="Mapa esquemático con 6 centros: 2 en nivel Bajo, 2 Medio y 2 Alto"><path d="M0 130 C120 100 200 200 480 150" stroke="var(--bd)" stroke-width="8" fill="none"/><text x="14" y="124" fill="var(--mu)" font-size="12">Río Sereno</text>${[["NORTE",140,40],["CENTRO",300,130],["SUR",160,240]].map(a=>`<text x="${a[1]}" y="${a[2]}" fill="var(--mu)" font-size="12" font-weight="700" opacity=".7">ZONA ${a[0]}</text>`).join("")}${C.map((c,i)=>`<g><circle cx="${c[7]}" cy="${c[8]}" r="15" fill="${f(c[2])}" stroke="${k(c[2])}" stroke-width="2"/><text x="${c[7]}" y="${c[8]+5}" text-anchor="middle" font-size="14" font-weight="700" fill="${k(c[2])}">${i+1}</text><text x="${c[7]}" y="${c[8]+33}" text-anchor="middle" font-size="11" font-weight="600" fill="var(--tx)">${c[2]}</text></g>`).join("")}</svg>`}
+function ln(){const v=[18,24,31,38,45,52,58,49,42,36,30,26],p=v.map((x,i)=>`${20+i*40},${130-x*1.7}`);return `<svg class="ln" viewBox="0 0 480 160" role="img" aria-label="Espera promedio por hora de 7 a 18 horas, con pico de 58 minutos a las 12:00"><polygon points="20,130 ${p.join(" ")} 460,130" fill="var(--ac)" opacity=".5"/><polyline points="${p.join(" ")}" fill="none" stroke="var(--pr)" stroke-width="2.5" stroke-linejoin="round"/>${v.map((x,i)=>i%2==0?`<text x="${20+i*40}" y="150" text-anchor="middle" font-size="10" fill="var(--mu)">${7+i}h</text>`:"").join("")}<text x="260" y="${122-58*1.7+8}" text-anchor="middle" font-size="11" font-weight="700" fill="var(--tx)">Pico 58 min</text></svg>`}
+list.innerHTML=C.map(card).join("");favs.innerHTML=[C[0],C[2]].map(card).join("");map1.innerHTML=map();map2.innerHTML=map();document.getElementById("ln").innerHTML=ln();
+tb.innerHTML=`<thead><tr><th>Centro</th><th>Saturación</th><th>Espera</th><th>Disponibilidad</th></tr></thead><tbody>${C.map(c=>`<tr><td><a href="#centro"><b>${c[0]}</b></a><br><span class="mu" style="font-size:.8rem">${c[1]}</span></td><td><span class="tag ${c[2]}">${c[3]} ${c[2]}</span></td><td>${c[4]} min</td><td>${c[6]>0?c[6]+" libres":"Sin disponibilidad"}</td></tr>`).join("")}</tbody>`;
+function pick(b){b.parentNode.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed","false"));b.setAttribute("aria-pressed","true")}
+function route(){const h=(location.hash||"#inicio").slice(1);const v=document.getElementById("v-"+h)?h:"inicio";document.querySelectorAll("section.v").forEach(s=>s.classList.toggle("on",s.id=="v-"+v));nav.querySelectorAll("a").forEach(a=>a.getAttribute("href")=="#"+v?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current"));crumb.textContent=N[v];document.title="XALTIL · "+N[v];window.scrollTo(0,0)}
+addEventListener("hashchange",route);route();
+mode.onclick=()=>{const on=document.body.classList.toggle("min");mode.setAttribute("aria-pressed",on);mode.textContent=on?"◧ Vista simple":"◨ Vista completa"};
+th.onclick=()=>{const r=document.documentElement;const d=r.dataset.theme?r.dataset.theme=="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=d?"light":"dark"};
+</script></body></html>
