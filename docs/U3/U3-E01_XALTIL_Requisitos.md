@@ -104,7 +104,7 @@ Estas suposiciones no se consideran requisitos confirmados hasta contar con evid
 
 ## C. Organización del alcance
 
-**Ruta elegida:** A (con épica).
+**Ruta elegida:** A
 
 **Motivo de elección:**
 
