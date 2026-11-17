@@ -1,21 +1,26 @@
 # Aporte individual — Emmanuel Obregon Estrada
-
 **Proyecto:** XALTIL
-**Sección del proceso asignada:** Búsqueda de centros de salud y visualización de resultados (Alineado al RF-01 y RF-02).
+**Sección del proceso asignada:** Búsqueda y visualización de centros de salud (RF-01 y RF-02)
 **Rol principal de la U3:** Coordinación
 **Fecha:** 2026-11-17
 
 ## 1. Información que necesito obtener
-- **Pregunta 1:** ¿Qué datos exactos requiere un paciente para considerar que una búsqueda de centro de salud es exitosa? (Ej. ¿Basta con la especialidad, o requiere filtrar también por turno mañana/tarde?).
-- **Pregunta 2:** Si un paciente busca en una zona donde no hay centros con esa especialidad, ¿qué espera que haga el sistema? (¿Mostrar los más cercanos aunque estén lejos, o un mensaje de "sin resultados"?).
-- **Técnica elegida y motivo:** Análisis documental y revisión de requerimientos. Se elige esta técnica porque actualmente no tenemos acceso directo a una muestra grande de pacientes para entrevistar, pero el documento U2-E01 ya define claramente el proceso de negocio y la propuesta de valor.
-- **Fuente a consultar:** Documento U2-E01 (Modelado del negocio).
-- **Fecha prevista o estado:** Completado (basado en fuentes documentales del 07/10/2026). Pendiente la validación directa con un usuario (entrevista).
+- **Pregunta 1:** ¿Qué estándares técnicos existen para que un sistema permita a un paciente buscar y encontrar centros de salud por ubicación y especialidad?
+- **Pregunta 2:** ¿Cómo deben presentarse los resultados de búsqueda para que el usuario pueda comparar opciones de atención de manera útil?
+- **Técnica elegida y motivo:** Análisis documental de estándares internacionales de salud digital y guías de implementación. Se elige esta técnica porque permite fundamentar los requisitos con fuentes técnicas verificables y reconocidas en la industria, sin depender de entrevistas que aún no se han realizado.
+- **Fuente a consultar:** Especificación SMART Scheduling Links de HL7 International (basada en el estándar FHIR) y documentos de la Organización Panamericana de la Salud (OPS) sobre sistemas de información en salud.
+- **Fecha prevista o estado:** Completado (consulta realizada el 17/11/2026).
 
 ## 2. Información que ya tengo
-- **Fuente real:** F-01 (Documento U2-E01 del equipo Webtons, con fecha del 07/10/2026. Respaldo en el repositorio de GitHub del equipo).
-- **Hallazgo comprobable:** El proceso TO-BE inicia estrictamente cuando el usuario ingresa su ubicación y especialidad. La propuesta de valor del sistema se basa en que el usuario pueda comparar opciones *antes* de salir de casa para evitar desplazamientos innecesarios.
-- **Dudas:** No está definido en el documento si la ubicación debe ingresarse por texto (ej. "Colonia Centro") o si el sistema obligará a usar el GPS del celular/mapa interactivo.
+- **Fuente real:**
+  - **F-01:** Documento `U3-E01_XALTIL_Requisitos.md` del equipo Webtons (Sección E.1), consultado en el repositorio de GitHub (Noviembre 2026).
+  - **F-02:** HL7 International. (2026). *SMART Scheduling Links* (v1.0.0). Recuperado de http://hl7.org/fhir/uv/smart-scheduling-links/
+  - **F-03:** Organización Panamericana de la Salud (OPS). *IS4H Foundations: Sistemas de Información para la Salud*. Recuperado de https://www.paho.org/en/is4h-information-systems-health/is4h-foundations
+- **Hallazgo comprobable:**
+  - El estándar HL7 SMART Scheduling Links establece explícitamente que las herramientas de reserva deben permitir al paciente **"encontrar horarios de citas buscando por geografía, especialidad, sistema de salud, etc."** [citation:1][citation:8]. Además, define casos de prueba específicos para búsquedas por ubicación y por especialidad, donde el sistema debe filtrar resultados y presentar información suficiente para que el usuario seleccione [citation:6]. Esto respalda directamente la necesidad del **RF-01** (ingreso de ubicación y especialidad).
+  - La OPS, a través de su marco IS4H, promueve sistemas de información **interconectados e interoperables** que permitan generar información estratégica para la salud pública [citation:4]. La falta de un sistema unificado obliga a los pacientes a desplazarse sin certeza, por lo que la visualización consolidada de opciones (RF-02) contribuye a reducir esa brecha de información.
+- **Dudas:**
+  - El documento del equipo no especifica si la lista de resultados debe incluir filtros adicionales (ej. tipo de institución, horario) ni el criterio de orden (ej. cercanía, tiempo de espera). Queda pendiente validar con el equipo de desarrollo y con usuarios reales.
 
 ## 3. Necesidad identificada
-**N-01:** El paciente necesita un mecanismo de búsqueda que reciba su ubicación y especialidad médica, y que le devuelva un listado claro y ordenado de los centros de salud que cumplen con esos criterios. Esto es indispensable para que pueda comparar sus opciones y decidir a dónde acudir, cumpliendo así con el objetivo del proyecto.
+El paciente necesita una interfaz que le permita **ingresar su ubicación y la especialidad requerida de forma clara**, y que el sistema le devuelva **una lista comprensible de los centros de salud que coinciden con su búsqueda**, priorizando la utilidad para la toma de decisiones. Los estándares internacionales de salud digital (HL7 FHIR) confirman que la búsqueda por geografía y especialidad es un requisito fundamental en los sistemas modernos de agendamiento, y que los resultados deben presentarse con información suficiente para que el usuario pueda comparar y elegir [citation:1][citation:6]. Sin esta capacidad, XALTIL no podría cumplir su propuesta de valor de permitir al usuario decidir a qué centro acudir antes de desplazarse.
