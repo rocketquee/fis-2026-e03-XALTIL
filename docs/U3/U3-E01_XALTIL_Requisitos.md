@@ -223,7 +223,7 @@ Ordenado por prioridad y dependencias reales (no por ID). En U3 las tareas son d
 
 **Nombre del recorrido:** recorrido del usuario mediante wireframes de baja fidelidad. Los datos mostrados (centros, tiempos, folio) son **ficticios** y solo ilustran la estructura. No es una aplicación funcional.
 
-![Recorrido de XALTIL](C:\Users\jonnatan\Desktop\clonado\fis-2026-e03-XALTIL\docs\U3\U3_Prototipo_XALTIL_Recorrido.png)
+![Recorrido de XALTIL](U3/U3_Prototipo_XALTIL_Recorrido.png)
 
 **Archivo:** `docs/U3/prototipo/U3_Prototipo_XALTIL_Recorrido.png`
 
