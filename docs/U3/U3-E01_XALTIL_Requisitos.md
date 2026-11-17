@@ -10,7 +10,7 @@
 
 **Integrantes:**
 - García Villegas Jorge Ignacio --- Calidad y Documentacion
-- Martínez Aquino Jonnatan -------- Desarrollo
+- Martínez| Aquino Jonnatan -------- Desarrollo
 - Obregon Estrada Emmanuel -------- Cordinacion
 - Ortiz Saucedo Jesús Adán -------- Analisis
 
