@@ -5,8 +5,6 @@
 **Rol principal de la U3:** Desarrollo / prototipo
 **Fecha:** 2026-11-16
 
-> Este borrador no sustituye al PDF `U3-E02_Jonnatan_Martinez_ObtencionYRedaccion.pdf`. Todo lo no confirmado queda como «Pendiente» o «Por validar».
-
 ## 1. Información que necesito obtener
 
 - **Pregunta 1:** ¿Qué datos ingresa normalmente un paciente o familiar para buscar un centro de salud, y qué errores comete al hacerlo (ubicación vacía o mal escrita, especialidad que no sabe elegir)?
